@@ -1,13 +1,51 @@
-# Pollution
-Analysis of the Data-set having different parameters:
-1.  Temperature
-2.  Humidity
-3.  PM2.5
-4.  PM10
-5.  NO2
-6.  SO2
-7.  CO
-8.  Proximity to Industrial Areas
+# 🌍 Pollution Level Clustering Project
 
-  which affects the air quality of a particular region. The given parameters helps to determine the overall pollution level of an area.
+This project uses unsupervised learning (clustering) to group regions based on air pollution and environmental factors. The goal is to see if **KMeans** clustering can reveal patterns that reflect pollution levels — without using any pre-labeled pollution score.
 
+---
+
+## 🧾 Parameters in Dataset
+
+The dataset includes the following features:
+
+- Temperature  
+- Humidity  
+- PM2.5  
+- PM10  
+- NO₂ (Nitrogen Dioxide)  
+- SO₂ (Sulfur Dioxide)  
+- CO (Carbon Monoxide)  
+- Proximity to Industrial Areas  
+
+These features influence the overall **air quality** of a region.
+
+---
+
+## 🧪 What the Project Does
+
+1. **Preprocessing**
+   - Handle missing values and remove any outliers
+   - Prepare the dataset for clustering
+
+2. **Data Scaling**
+   - Use `StandardScaler` to normalize environmental features
+
+3. **Dimensionality Reduction**
+   - Apply `PCA` to reduce the number of features while keeping important patterns
+
+4. **Clustering**
+   - Use `KMeans` to group regions with similar pollution characteristics
+   - Visualize clusters to understand pollution zones
+
+---
+
+## 🧰 Tools Used
+
+```python
+import pandas as pd  
+import numpy as np  
+import seaborn as sns  
+import matplotlib.pyplot as plt  
+from sklearn.decomposition import PCA  
+from sklearn.preprocessing import StandardScaler  
+from sklearn.cluster import KMeans  
