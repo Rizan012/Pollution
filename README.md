@@ -4,7 +4,7 @@ This project uses unsupervised learning (clustering) to group regions based on a
 
 ---
 
-## 🧾 Parameters in Dataset
+## Parameters in Dataset
 
 The dataset includes the following features:
 
@@ -21,7 +21,7 @@ These features influence the overall **air quality** of a region.
 
 ---
 
-## 🧪 What the Project Does
+## What the Project Does
 
 1. **Preprocessing**
    - Handle missing values and remove any outliers
@@ -39,7 +39,7 @@ These features influence the overall **air quality** of a region.
 
 ---
 
-## 🧰 Tools Used
+## Tools Used
 
 ```python
 import pandas as pd  
@@ -49,3 +49,8 @@ import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA  
 from sklearn.preprocessing import StandardScaler  
 from sklearn.cluster import KMeans  
+```
+
+## Results (Streamlit):
+
+![Demo](Result_Img/my_plot.png)
