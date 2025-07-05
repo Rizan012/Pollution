@@ -54,3 +54,8 @@ from sklearn.cluster import KMeans
 ## Results (Streamlit):
 
 ![Demo](Result_Img/my_plot.png)
+
+
+## Report
+
+A short report of the clusters : Pollution Cluster Analysis.docx
